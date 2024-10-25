@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+/* 
+------------
+    NAV
+------------
+*/
+
+nav{
+    display: flex;
+    background-color: #F4F5F7;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    padding-left: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+svg{
+    font-weight: 500;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logoTitle{
+    font-weight: 400;
+    margin: 0;
+}
+
+
+/* 
+-------------
+    Aside
+-------------
+*/
+
+aside{
+    width: 250px;
+    height: calc(100dvh - 60px );
+    position: sticky;
+    top:0;
+    background-color: #F4F5F7;
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+hr{
+    margin: 0;
+}
+
+.home{
+    margin: 10px 0 30px;
+}
+
+aside h3 svg{
+    margin-right: 10px;
+}
+
+aside h3{
+    letter-spacing: 0.05em;
+    margin: 0 0 15px 0;
+    margin-left: 30px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+aside h3:hover{
+    cursor: pointer;
+    color: #656565;
+}
+
+aside h2{
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+#addtask button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    z-index: 10;
+    margin: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    background-color: transparent;
+}
+
+#addtask button:active{
+    transform: translateY(2px);
+}
+
+
+/* 
+-----------
+    Main
+-----------
+*/
+
+main{
+    position: relative;
+    display: flex;
+}
+
+
+
+/*
+-------------
+    TASK
+-------------
+*/
+
+.task,h3,p{
+    margin: 0;
+}
+
+#all{
+    margin: 30px;
+    width: 100%;
+}
+
+.task{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0 20px 20px;
+}
+
+
+.taskheading{
+    display: flex;
+    align-items: center;
+}
+
+.taskheading h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+.taskheading p{
+    margin-right: 10px;
+}
+
+.taskheading svg{
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.task p{
+    color: #2f2f2f;
+}
+
+#taskmenubar{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    top: 50px;
+    right: 0;
+    margin-right: 30px;
+    padding: 10px;
+    position: absolute;
+    background-color: #bebebe;
+    width: 50px;
+}
+
+/* 
+-----------
+    FORM
+-----------
+*/
+
+#form{
+    display: none;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #F4F5F7;
+    height: 260px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #2f2f2f;
+    padding: 0 20px;
+}
+
+#form button{
+    border-radius: 20px;
+    height: 35px;
+    width: 100px;
+    font-size: 0.9rem;
+    margin-left: auto;
+}
+
+.input_submit{
+    display: flex;
+}
+
+.fromtitle, .fromDesc, .fromDate{
+    display: flex;
+    flex-direction: column;
+}
+
+.fromDate input{
+    width: 150px;
+}
+
+label{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+input{
+    height: 24px;
+    font-size: 1rem;
+}
+
+.taskTitle{
+    display: flex;
+    align-items: center;
+}
+
+.taskTitlelabel{
+    margin-right: auto;
+}
+
+.taskTitle svg{
+    cursor: pointer;
+    margin-left: auto;
+}
